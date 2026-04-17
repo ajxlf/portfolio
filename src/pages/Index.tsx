@@ -42,11 +42,12 @@ const projects = [
 ];
 
 const skills = [
-  { group: "Languages", items: ["Java", "JavaScript", "Kotlin", "Python", "SQL"] },
+  { group: "Spoken Languages", items: ["English - Fluent", "Portugese - Fluent", "Spanish - B2"] },
+  { group: "Programming Languages", items: ["Java", "JavaScript", "Kotlin", "Python", "SQL"] },
   { group: "Web / Front End", items: ["HTML", "CSS", "JavaScript", "React"] },
   { group: "Back End / APIs", items: ["JAX-RS", "REST APIs", "Django"] },
   { group: "Databases", items: ["SQLite", "Room"] },
-  { group: "Tools", items: ["Git", "GitHub", "Android Studio", "SQLiteStudio", "Trello"] },
+  { group: "Tools", items: ["Git", "GitHub", "Android Studio", "SQLiteStudio", "Trello", "Jupyter Notebook"] },
 ];
 
 const NAME = "Andre Lawson-Ferreira";
@@ -150,12 +151,14 @@ const Index = () => {
                 Computer Science BSc at the University of Westminster, graduating 2027.
               </p>
               <p className="mt-6 text-base md:text-lg text-muted-foreground leading-relaxed">
-                I&apos;m focused on getting solid at the fundamentals — data structures, web
-                development, databases — and applying them by building things end-to-end. I&apos;m
-                most interested in software engineering roles where I can keep learning from
-                stronger engineers and contribute to real projects. Outside of coursework I
-                spend time reading documentation, working through side projects, and improving
-                the things on this page.
+                It took me a while to realise that Computer Science was the area I wanted to be in, but now, I've got clear goals and will work as hard 
+                as possible to achieve them. I'm targeting a software engineering role post-graduation
+                where the work is challenging enough to keep me sharp. I'm extremely interested in aerospace
+                and will primarily be targetting roles in that sector.
+              </p>
+              <p className="mt-6 text-base md:text-lg text-muted-foreground leading-relaxed">
+                Outside of work I like to fill my time as much as possible: I'm an experienced amateur boxer, avid gamer and love playing chess. All hobbies which I help refine
+                my character and push me to be better at everything I do.
               </p>
             </div>
           </div>
