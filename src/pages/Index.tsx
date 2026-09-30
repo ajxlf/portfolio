@@ -54,7 +54,7 @@ const NAME = "Andre Lawson-Ferreira";
 const EMAIL = "aj.ferreira@hotmail.co.uk";
 const GITHUB = "https://github.com/ajxlf";
 const LINKEDIN = "https://www.linkedin.com/in/andrelawferreira";
-const CV_URL = "public/Andre_Ferreira_CV.pdf";
+const CV_URL = "/portfolio/Andre_Ferreira_CV.pdf";
 
 const Index = () => {
   const [dark, setDark] = useState(false);
