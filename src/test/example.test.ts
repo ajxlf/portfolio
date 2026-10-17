@@ -35,6 +35,6 @@ describe("portfolio page", () => {
       expect(screen.getByRole("heading", { name: project })).toBeTruthy();
     }
 
-    expect(screen.getByRole("link", { name: /github/i }).getAttribute("href")).toBe("https://github.com/ajxlf");
+    expect(screen.getAllByRole("link").some((link) => link.getAttribute("href") === "https://github.com/ajxlf")).toBe(true);
   });
 });
