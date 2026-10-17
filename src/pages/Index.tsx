@@ -13,7 +13,7 @@ const projects = [
       "Added recipe and workout libraries, calorie and macro estimates, journalling, and data backup",
     ],
     github: "https://github.com/ajxlf/cadence",
-    demo: "",
+    demo: "https://ajxlf.github.io/cadence/",
   },
   {
     name: "CyberDrive",
@@ -122,7 +122,7 @@ const Index = () => {
               {NAME}
             </h1>
             <p className="mt-5 text-lg md:text-xl text-muted-foreground max-w-2xl">
-              Computer Science Student · Aspiring Software Engineer
+              BSc Computer Science · Graduate Software Engineering Candidate (2027)
             </p>
             <p className="mt-8 max-w-2xl text-base md:text-lg leading-relaxed">
               I build software across web, mobile and backend systems. My projects include a cross-device personal planner, an iOS/CarPlay navigation concept, an Android puzzle game and a Java REST API. I focus on solving practical problems, explaining technical decisions and making projects easy to run and evaluate.
@@ -338,7 +338,7 @@ const Index = () => {
             </h2>
             <div className="max-w-2xl">
               <p className="font-display text-3xl md:text-4xl leading-tight">
-                Open to graduate &amp; placement software engineering roles.
+                Open to 2027 graduate software engineering opportunities.
               </p>
               <p className="mt-5 text-muted-foreground leading-relaxed">
                 The fastest way to reach me is by email. I aim to reply within a couple of days.
