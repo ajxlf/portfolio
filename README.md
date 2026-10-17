@@ -2,6 +2,8 @@
 
 Personal portfolio website for graduate software engineering applications.
 
+I’m interested in AI-assisted development where it improves exploration, implementation or testing, with code quality and validation remaining my responsibility.
+
 ## Featured projects
 
 - **[Cadence](https://github.com/ajxlf/cadence)** — personal planning PWA with activity and meal planning, Supabase authentication, PostgreSQL-backed cloud persistence and realtime synchronisation.
