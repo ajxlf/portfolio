@@ -4,50 +4,63 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    name: "Smart Campus JAX-RS API",
-    problem: "A RESTful API for managing smart campus data such as rooms, sensors, and sensor readings.",
-    stack: ["Java", "JAX-RS", "Maven", "REST API"],
+    name: "Cadence",
+    problem: "A personal planning web app combining activity scheduling, nutrition, workouts and journalling, with account-based cloud synchronisation.",
+    stack: ["JavaScript", "Supabase", "PostgreSQL", "PWA", "GitHub Pages"],
     features: [
-      "Implemented resources for rooms, sensors, and sensor readings",
-      "Designed API endpoints for creating, retrieving, and managing linked campus data",
-      "Documented and tested endpoints with curl examples and project README guidance",
+      "Built a weekly planner with recurring activities that can be completed independently",
+      "Integrated Supabase authentication, PostgreSQL-backed persistence and realtime sync",
+      "Added recipe and workout libraries, calorie and macro estimates, journalling, and data backup",
+    ],
+    github: "https://github.com/ajxlf/cadence",
+    demo: "https://ajxlf.github.io/cadence/",
+  },
+  {
+    name: "CyberDrive",
+    problem: "An iOS and CarPlay navigation app concept combining MapKit routing with a custom cyberpunk-style map.",
+    stack: ["Swift", "SwiftUI", "MapKit", "MapLibre", "CarPlay"],
+    features: [
+      "Implemented GPS position and heading, destination search, and driving-route flows",
+      "Designed custom map styling using MapLibre and OpenStreetMap-derived vector data",
+      "Documented a GitHub Actions simulator smoke test that builds, launches and captures diagnostic artefacts",
+    ],
+    github: "https://github.com/ajxlf/CyberDrive",
+    demo: "",
+  },
+  {
+    name: "Cross-Math",
+    problem: "An Android arithmetic puzzle game in which players complete intersecting horizontal and vertical equations.",
+    stack: ["Kotlin", "Jetpack Compose", "ViewModel", "Coroutines"],
+    features: [
+      "Generated variable-size puzzles with intersecting equations and validation of candidate placements",
+      "Implemented live answer validation, scoring and an optional countdown mode",
+      "Preserved puzzle and timer state across device rotation",
+    ],
+    github: "https://github.com/ajxlf/Cross-Math",
+    demo: "",
+  },
+  {
+    name: "Smart Campus JAX-RS API",
+    problem: "A Java REST API for managing campus rooms, sensors and historical sensor readings.",
+    stack: ["Java", "JAX-RS", "Jersey", "Maven", "REST"],
+    features: [
+      "Designed endpoints for linked room, sensor and sensor-reading resources",
+      "Handled invalid relationships and prohibited operations with structured HTTP errors",
+      "Documented the API with endpoint tables and reproducible curl examples",
     ],
     github: "https://github.com/ajxlf/smart-campus-jaxrs-api",
-    demo: "",
-  },
-  {
-    name: "Sky Registry",
-    problem: "A web application for browsing and searching structured organisational or registry-style data.",
-    stack: ["Python", "Django", "HTML", "CSS", "SQLite"],
-    features: [
-      "Built data models with relationships and ordering",
-      "Implemented list and detail views with search and filtering",
-      "Added admin configuration and test coverage for core views and models",
-    ],
-    github: "https://github.com/ajxlf/sky-registry",
-    demo: "",
-  },
-  {
-    name: "Meal Prepper",
-    problem: "An Android app for storing and searching meal data using both a web API data source and a local Room database.",
-    stack: ["Kotlin", "Jetpack Compose", "Room", "SQLite", "Android"],
-    features: [
-      "Created multiple app screens for adding, searching, and viewing meals",
-      "Stored hardcoded meal data in a local Room database",
-      "Connected UI state and database queries in a coursework-focused mobile app workflow",
-    ],
-    github: "https://github.com/ajxlf/Meal-Prepper",
     demo: "",
   },
 ];
 
 const skills = [
-  { group: "Spoken Languages", items: ["English - Fluent", "Portugese - Fluent", "Spanish - B2"] },
-  { group: "Programming Languages", items: ["Java", "JavaScript", "Kotlin", "Python", "SQL"] },
-  { group: "Web / Front End", items: ["HTML", "CSS", "JavaScript", "React"] },
-  { group: "Back End / APIs", items: ["JAX-RS", "REST APIs", "Django"] },
-  { group: "Databases", items: ["SQLite", "Room"] },
-  { group: "Tools", items: ["Git", "GitHub", "Android Studio", "SQLiteStudio", "Trello", "Jupyter Notebook"] },
+  { group: "Programming Languages", items: ["Java", "JavaScript", "TypeScript", "Kotlin", "Python", "SQL", "Swift"] },
+  { group: "Web / Front End", items: ["HTML", "CSS", "React", "Vite", "Tailwind CSS"] },
+  { group: "Back End / APIs", items: ["Django", "JAX-RS", "REST APIs", "Supabase"] },
+  { group: "Databases", items: ["PostgreSQL", "SQLite", "Room"] },
+  { group: "Mobile / Platform", items: ["Android", "Jetpack Compose", "SwiftUI", "MapKit", "MapLibre", "CarPlay"] },
+  { group: "Tools", items: ["Git", "GitHub", "GitHub Actions", "Android Studio", "Jupyter Notebook"] },
+  { group: "Spoken Languages", items: ["English — Fluent", "Portuguese — Fluent", "Spanish — B2"] },
 ];
 
 const NAME = "Andre Lawson-Ferreira";
@@ -109,13 +122,10 @@ const Index = () => {
               {NAME}
             </h1>
             <p className="mt-5 text-lg md:text-xl text-muted-foreground max-w-2xl">
-              Computer Science Student · Aspiring Software Engineer
+              BSc Computer Science · Graduate Software Engineering Candidate (2027)
             </p>
             <p className="mt-8 max-w-2xl text-base md:text-lg leading-relaxed">
-              I&apos;m a Computer Science student building small, useful software projects while
-              I learn. I enjoy figuring out how things work, writing clear code, and shipping
-              something I can show people. This page collects what I&apos;ve made so far and
-              where to find more.
+              I build software across web, mobile and backend systems. My projects include a cross-device personal planner, an iOS/CarPlay navigation concept, an Android puzzle game and a Java REST API. I focus on solving practical problems, explaining technical decisions and making projects easy to run and evaluate.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <Button asChild size="lg">
@@ -133,7 +143,7 @@ const Index = () => {
               </Button>
             </div>
             <p className="mt-8 inline-flex items-center gap-2 text-sm text-muted-foreground">
-              <MapPin className="h-3.5 w-3.5" /> Mitcham, England
+              <MapPin className="h-3.5 w-3.5" /> London, United Kingdom
             </p>
           </div>
         </section>
@@ -151,14 +161,10 @@ const Index = () => {
                 Computer Science BSc at the University of Westminster, graduating 2027.
               </p>
               <p className="mt-6 text-base md:text-lg text-muted-foreground leading-relaxed">
-                It took me a while to realise that Computer Science was the area I wanted to be in, but now, I've got clear goals and will work as hard 
-                as possible to achieve them. I'm targeting a software engineering role post-graduation
-                where the work is challenging enough to keep me sharp. I'm extremely interested in aerospace
-                and will primarily be targetting roles in that sector.
+                I’m studying for a BSc in Computer Science at the University of Westminster, graduating in 2027. I’m preparing for graduate software engineering roles, with a particular interest in dependable applications, APIs and aerospace software. My projects span web, mobile and platform development, and I use them to deepen my understanding of design trade-offs, implementation and testing.
               </p>
               <p className="mt-6 text-base md:text-lg text-muted-foreground leading-relaxed">
-                Outside of work I like to fill my time as much as possible: I'm an experienced amateur boxer, avid gamer and love playing chess. All hobbies which I help refine
-                my character and push me to be better at everything I do.
+                Outside software, boxing and chess keep me focused on discipline, deliberate practice and continuous improvement.
               </p>
             </div>
           </div>
@@ -332,7 +338,7 @@ const Index = () => {
             </h2>
             <div className="max-w-2xl">
               <p className="font-display text-3xl md:text-4xl leading-tight">
-                Open to graduate &amp; placement software engineering roles.
+                Open to 2027 graduate software engineering opportunities.
               </p>
               <p className="mt-5 text-muted-foreground leading-relaxed">
                 The fastest way to reach me is by email. I aim to reply within a couple of days.
@@ -357,7 +363,7 @@ const Index = () => {
       <footer className="border-t border-border">
         <div className="container-prose py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} {NAME}. Built with React &amp; Tailwind.</p>
-          <p className="font-mono text-xs">Mitcham · England</p>
+          <p className="font-mono text-xs">London · United Kingdom</p>
         </div>
       </footer>
     </div>
