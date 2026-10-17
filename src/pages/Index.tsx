@@ -161,7 +161,7 @@ const Index = () => {
                 Computer Science BSc at the University of Westminster, graduating 2027.
               </p>
               <p className="mt-6 text-base md:text-lg text-muted-foreground leading-relaxed">
-                I’m studying for a BSc in Computer Science at the University of Westminster, graduating in 2027. I’m preparing for graduate software engineering roles, with a particular interest in dependable applications, APIs and aerospace software. My projects span web, mobile and platform development, and I use them to deepen my understanding of design trade-offs, implementation and testing.
+                I’m studying for a BSc in Computer Science at the University of Westminster, graduating in 2027. I’m preparing for graduate software engineering roles, with a particular interest in dependable applications, APIs and aerospace software. My projects span web, mobile and platform development, and I use them to deepen my understanding of design trade-offs, implementation and testing. I’m also keen to use AI-assisted development where it adds value, from exploring approaches to supporting implementation and testing, while independently reviewing and validating the result.
               </p>
               <p className="mt-6 text-base md:text-lg text-muted-foreground leading-relaxed">
                 Outside software, boxing and chess keep me focused on discipline, deliberate practice and continuous improvement.
