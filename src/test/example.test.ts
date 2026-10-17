@@ -1,4 +1,5 @@
 import { cleanup, render, screen } from "@testing-library/react";
+import { createElement } from "react";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import Index from "../pages/Index";
 
@@ -24,13 +25,13 @@ describe("portfolio page", () => {
   });
 
   it("introduces the developer and their graduate software engineering focus", () => {
-    render(<Index />);
+    render(createElement(Index));
     expect(screen.getByRole("heading", { name: "Andre Lawson-Ferreira" })).toBeTruthy();
     expect(screen.getByText(/graduate software engineering roles/i)).toBeTruthy();
   });
 
   it("shows the four featured projects with links to their source repositories", () => {
-    render(<Index />);
+    render(createElement(Index));
     for (const project of ["Cadence", "CyberDrive", "Cross-Math", "Smart Campus JAX-RS API"]) {
       expect(screen.getByRole("heading", { name: project })).toBeTruthy();
     }
